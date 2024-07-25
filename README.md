@@ -1,5 +1,5 @@
 # Metaculus Bot Forecaster
-This repository is used to use a Github actions to automate the periodic execution of a Google colab notebook that makes LLM-powered forecasts in Metaculus' [AI benchmarking competition](https://www.metaculus.com/project/ai-benchmarking-pilot/).
+This repository is used to use a Github actions to automate the periodic execution of a Google colab notebook that makes LLM-powered forecasts in Metaculus' [AI benchmarking competition](https://www.metaculus.com/project/aibq3/).
 
 ### :rotating_light: :rotating_light: :rotating_light: Warning :rotating_light: :rotating_light: :rotating_light:
 
@@ -7,13 +7,9 @@ This repository is used to use a Github actions to automate the periodic executi
 
 ## Getting Started
 
-Note that I am a novice, so these instructions may contain mistakes or may not be the most efficient way to do it.
-
 ### Step One: Copy the Colab Notebook
 
-First you need to have made a copy of the [Google colab notebook](https://colab.research.google.com/drive/1_P7_QNJiJyWBY2qCVu2-_8gVPD1X7mX3?usp=sharing) used to make forecasts.
-
-*Note that currently only the linked notebook is setup properly to enable this automated process, so you should copy and modify that one. Metaculus has other Google colab templates that have not implemented the code necessary to be used with this Github action.*
+First you need to have made a copy of the Google colab notebook used to make forecasts. (JMS_Metaculus_Bot_Notebook.ipynb)
 
 ### Step Two: Copy This Repository
 
@@ -27,7 +23,7 @@ Once you have your own repository you can make the changes below (note these are
 
 #### Step Three Part A: Add Your Colab Notebook
 
-Replace `Ryan_LLM_Forecast_Bot.ipynb` with your own Colab notebook:
+Replace `JMS_Metaculus_Bot_Notebook.ipynb` with your own Colab notebook:
 * Click on the notebook and in the top right of the page in the `. . .` menu you can click "Delete file". Click "Commit changes" to complete the deletion.
 * Add your own notebook. I think the easiest way to do this is with Google Colab's Github integration.
     * In Colab go to `File > Save a copy in Github`. Follow the steps to link your Github account and select your repository, then add your notebook.
@@ -61,8 +57,6 @@ Then go to "Actions" at the top of your repository and select `run [workflow nam
 Cross your fingers and wait for it to complete! Hopefully it completed without errors, but if not you may have to do some troubleshooting. If you can't figure it out, feel free to ask me for help. If all worked well you should be able to see your Metaculus bot account making forecasts and comments in the project on the Metaculus platform (assuming you have set it to submit to Metaculus).
 
 **Note:** To see the output of the notebook run (which can also add in troubleshooting), click on the run and then on the output artifact to download the artifact. That will download a zip file that contains the notebook and an html file, both of which will have the full output produced by the notebook.
-
-![output artifact](https://github.com/ryooan/metaculus-bot-forecaster/assets/45539871/3311dc6c-19c3-4bb8-b7d2-9521ca02cf96)
 
 ## Monitor and Hone Your Bot!
 
