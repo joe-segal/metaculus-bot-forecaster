@@ -1,10 +1,6 @@
 # Metaculus Bot Forecaster
 This repository is used to use a Github actions to automate the periodic execution of a Google colab notebook that makes LLM-powered forecasts in Metaculus' [AI benchmarking competition](https://www.metaculus.com/project/aibq3/).
 
-### :rotating_light: :rotating_light: :rotating_light: Warning :rotating_light: :rotating_light: :rotating_light:
-
-**You are responsible for monitoring the costs of your implementation, especially if using the automated Github workflow. Cost estimates computed by this notebook are rough estimates only, make sure to check and monitor how much you are spending and the funds in your relevant accounts.**
-
 ## Getting Started
 
 ### Step One: Copy the Colab Notebook
